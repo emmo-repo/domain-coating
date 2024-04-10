@@ -1,6 +1,7 @@
 @prefix : <https://vipcoat-oip.com/coating-ontology#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix emmo: <http://emmo.info/emmo#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix electrochemistry: <https://w3id.org/emmo/domain/electrochemistry#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -229,7 +230,7 @@
 :EMMO_8c6bb938-58f3-5838-aba8-9d5620f67c19 a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Water film that act as an electrolyte, e.g. tranports ions to the surface necessary for corrosion."@en ;
     rdfs:comment " "@en ;
-    rdfs:subClassOf <http://emmo.info/electrochemistry#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59> ;
+    rdfs:subClassOf electrochemistry:electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59 ;
     skos:altLabel "Electrolyte"@en ;
     skos:prefLabel "WaterFilm"@en .
 
