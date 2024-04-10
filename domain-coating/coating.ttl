@@ -17,8 +17,8 @@
         " Peter Visser"@en,
         "Zoi Kefallinou"@en ;
     dcterms:title "Coating ontology"@en ;
-    owl:imports <http://emmo.info/electrochemistry/electrochemistry>,
-        <http://emmo.info/emmo-inferred> ;
+    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.11.0-beta/electrochemistry>,
+        <https://w3id.org/emmo/1.0.0-beta7/emmo> ;
     owl:versionInfo "v0.0.1"@en .
 
 :EMMO_0307ebb5-14e4-5201-963c-b3268f01338f a owl:Class ;
