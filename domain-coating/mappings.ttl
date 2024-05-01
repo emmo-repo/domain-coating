@@ -1,0 +1,5 @@
+@prefix micro: <https://w3id.org/emmo/domain/microstructure#> .
+@prefix map: <https://w3id.org/emmo/domain/mappings#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+
+xxx:elements map:mapsTo emmo:ChemicalElement .
