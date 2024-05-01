@@ -1,5 +1,16 @@
 @prefix micro: <https://w3id.org/emmo/domain/microstructure#> .
 @prefix map: <https://w3id.org/emmo/domain/mappings#> .
 @prefix emmo: <https://w3id.org/emmo#> .
+@prefix app: <https://vipcoat-oip.com/coating-ontology#> .
+@prefix coating: <https://vipcoat-oip.com/vipcoat-application-ontology#> .
+@prefix droptest: <http://onto-ns.com/meta/0.1/DropTest#> .
 
-xxx:elements map:mapsTo emmo:ChemicalElement .
+droptest:ph_intitial map:mapsTo app:PHIntitial .
+droptest:ph_S1 map:mapsTo app:PHMeasuredAtTime .
+droptest:T map:mapsTo app:Tarnishing .
+droptest:C map:mapsTo app:CorrosionProduct .
+droptest:D map:mapsTo app:BlackSpotFormation .
+
+
+
+
