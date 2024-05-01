@@ -100,7 +100,7 @@
 ###  https://vipcoat-oip.com/coating-ontology#EMMO_1680653f-295a-520d-9d41-c4d2130dbfa3
 :EMMO_1680653f-295a-520d-9d41-c4d2130dbfa3 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_752e0f30-433e-526c-a420-f237e9d97de4 ;
-                                           rdfs:comment "In VIPCOAT defects are introduced in an autmated manner to ensure reproducibility. The defect is always through the whole coating system."@en ;
+                                           rdfs:comment "Scribe defects are introduced in an automated manner to ensure reproducibility. The defect is always through the whole coating system."@en ;
                                            skos:altLabel " Scratch"@en ,
                                                          "MechanicalCoatingDefect"@en ;
                                            skos:prefLabel "Scribe"@en ;
@@ -148,7 +148,8 @@
                                                              owl:onProperty emmo:EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
                                                              owl:someValuesFrom :EMMO_7c5362d7-5a28-5551-b483-543069fc7b52
                                                            ] ;
-                                           skos:prefLabel "CoatingDefectPartOfCoating"@en .
+                                           skos:prefLabel "CoatingDefectPartOfCoating"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Coating defect that is part of the coating."@en .
 
 
 ###  https://vipcoat-oip.com/coating-ontology#EMMO_1f962da8-6f0e-5771-a1f5-400a0c71d352
@@ -207,12 +208,12 @@
                                                                              )
                                                                ] ;
                                            rdfs:subClassOf :EMMO_a62d07eb-90da-583a-bf6b-2c92f6536350 ;
-                                           rdfs:comment " Benzotriazole is an example of an organic inhibitor."@en ,
-                                                        " The corrosion inhibitor cromate ion can be added as e.g. a SrCrO4 pigment"@en ,
+                                           rdfs:comment " The corrosion inhibitor cromate ion can be added as e.g. a SrCrO4 pigment"@en ,
                                                         "This can be a particle, like a pigment  or an organic molecule. "@en ;
                                            skos:altLabel "CorrosionInhibitor"@en ;
                                            skos:prefLabel "Inhibitor"@en ;
-                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Compound that delays corrosion development by means of blocking parts of the surface. "@en .
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Compound that delays corrosion development by means of blocking parts of the surface. "@en ;
+                                           emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Benzotriazole is an example of an organic inhibitor."@en .
 
 
 ###  https://vipcoat-oip.com/coating-ontology#EMMO_3c7877cd-2551-5c21-a47b-ed49236b0852
@@ -360,7 +361,8 @@
                                                              owl:onProperty emmo:EMMO_8785be5a_2493_4b12_8f39_31907ab11748 ;
                                                              owl:someValuesFrom :EMMO_7c5362d7-5a28-5551-b483-543069fc7b52
                                                            ] ;
-                                           skos:prefLabel "CoatingDefectNotPartOfCoating"@en .
+                                           skos:prefLabel "CoatingDefectNotPartOfCoating"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Coating defect that is not part of the coating."@en .
 
 
 ###  https://vipcoat-oip.com/coating-ontology#EMMO_76a6d6c3-7870-545a-afd5-ccf121e3c74d
@@ -408,7 +410,7 @@
                                            rdfs:subClassOf :EMMO_d5f2346e-ee0b-5a17-944a-33b2f7d0f953 ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                             owl:someValuesFrom :EMMO_50c6149d-fb34-570f-b79a-b56feb179c6f
+                                                             owl:allValuesFrom :EMMO_50c6149d-fb34-570f-b79a-b56feb179c6f
                                                            ] ;
                                            owl:disjointWith :EMMO_bb053618-8a17-5ba4-953b-fd8ad57641b7 ;
                                            rdfs:comment "Can be made by combining a resin and a curing agent."@en ;
@@ -527,14 +529,14 @@
                                                              owl:someValuesFrom :EMMO_8b2f13fd-218d-50f6-8046-baa6a954a438
                                                            ] ;
                                            skos:prefLabel "NonVolatileAdditive"@en ;
-                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An additive that remains in the cure, but at very low concentrations."@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An additive that remains in the coating, but at very low concentrations."@en ;
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "DispersingAdditive"@en ,
                                                                                           "WettingAdditive"@en .
 
 
 ###  https://vipcoat-oip.com/coating-ontology#EMMO_bbe1faeb-fe76-5e9d-b6ed-05f47d409301
 :EMMO_bbe1faeb-fe76-5e9d-b6ed-05f47d409301 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_d2f83288-896e-571e-b800-8c4f0311e885 ;
+                                           rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
                                            skos:prefLabel "PretreatedSurface"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Output of SurfaceTreatmentProcess"@en .
 
@@ -601,16 +603,15 @@
 
 ###  https://vipcoat-oip.com/coating-ontology#EMMO_d2f83288-896e-571e-b800-8c4f0311e885
 :EMMO_d2f83288-896e-571e-b800-8c4f0311e885 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ,
-                                                           emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ,
+                                           rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_8785be5a_2493_4b12_8f39_31907ab11748 ;
                                                              owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94
+                                                             owl:onClass emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2
                                                            ] ;
                                            skos:altLabel "Boundary"@en ;
                                            skos:prefLabel "Interface"@en ;
-                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical elucidation: The boundary region where two different materials or electrolytes that meet and may interact with a specific thickness, capacitance, resistance. "@en .
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The boundary region where two different materials or electrolytes meet and may interact with a specific thickness, capacitance, resistance."@en .
 
 
 ###  https://vipcoat-oip.com/coating-ontology#EMMO_d5f2346e-ee0b-5a17-944a-33b2f7d0f953
@@ -620,7 +621,7 @@
                                                              owl:onProperty emmo:EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
                                                              owl:allValuesFrom :EMMO_7c5362d7-5a28-5551-b483-543069fc7b52
                                                            ] ;
-                                           rdfs:comment "Does not include the solvents that are used during preparation, but that evaporate."@en ;
+                                           rdfs:comment "Does not include the solvents that are used during preparation, but that evaporate and do not remain as constitutents in the cured coating."@en ;
                                            skos:prefLabel "CoatingConstituent"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Part of the dry coating."@en ;
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a " Additive"@en ,
