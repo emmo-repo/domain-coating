@@ -15,10 +15,7 @@
                                                                             " Elsyca"@en ,
                                                                             "SINTEF"@en ;
                                                         dcterms:creator " Francesca L. Bleken"@en ,
-                                                                        " Jesper Friis"@en ,
-                                                                        " Peter Meuris"@en ,
-                                                                        " Peter Visser"@en ,
-                                                                        "Zoi Kefallinou"@en ;
+                                                                        " Jesper Friis"@en ;
                                                         dcterms:title "Application ontology for VIPCOAT"@en ;
                                                         owl:versionInfo "v0.0.1"@en .
 
