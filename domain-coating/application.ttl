@@ -26,7 +26,8 @@
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#BlackSpotFormation
 :BlackSpotFormation rdf:type owl:Class ;
                     rdfs:subClassOf emmo:EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7 ;
-                    rdfs:comment """Formation of black spots in the scribe (0: nothing or unknown, 1:low, 2:medium 3:high)
+                    skos:prefLabel "BlackSpotFormation"@en ;
+                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Formation of black spots in the scribe (0: nothing or unknown, 1:low, 2:medium 3:high)
 
 http://onto-ns.com/meta/0.1/DropTest/D should ma p to this concept."""@en .
 
@@ -34,15 +35,30 @@ http://onto-ns.com/meta/0.1/DropTest/D should ma p to this concept."""@en .
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#CorrosionProduct
 :CorrosionProduct rdf:type owl:Class ;
                   rdfs:subClassOf emmo:EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7 ;
-                  rdfs:comment """Corrosion product in the scribe  (0: nothing or unknown, 1:low, 2:medium 3:high)
+                  skos:prefLabel "CorrosionProduct"@en ;
+                  emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Corrosion product in the scribe  (0: nothing or unknown, 1:low, 2:medium 3:high)
 
 http://onto-ns.com/meta/0.1/DropTest/C should map to this concept"""@en .
+
+
+###  https://vipcoat-oip.com/vipcoat-application-ontology#ElectrolytePotential
+:ElectrolytePotential rdf:type owl:Class ;
+                      rdfs:subClassOf emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204
+                                                       ] ;
+                                        owl:allValuesFrom <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59>
+                                      ] ;
+                      skos:prefLabel "Electric potential over an electrolyte."@en ,
+                                     "ElectrolytePotential"@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#NaPlus
 :NaPlus rdf:type owl:Class ;
         rdfs:subClassOf emmo:EMMO_cbcf8fe6_6da6_49e0_ab4d_00f737ea9689 ;
-        skos:altLabel "Na+"@en .
+        skos:altLabel "Na+"@en ;
+        skos:prefLabel "NaPlus"@en ;
+        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Chemical species for Na+ ion."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#NaPlusInElectrolyteConcentration
@@ -60,21 +76,41 @@ http://onto-ns.com/meta/0.1/DropTest/C should map to this concept"""@en .
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#PHInitial
 :PHInitial rdf:type owl:Class ;
-           rdfs:subClassOf emmo:EMMO_80fe82d4_f4c1_43a1_98dc_ee5fc7927e19 .
+           rdfs:subClassOf emmo:EMMO_80fe82d4_f4c1_43a1_98dc_ee5fc7927e19 ;
+           skos:prefLabel "PHInitial"@en ;
+           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Initial PH."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#PHMeasuredAtTime
 :PHMeasuredAtTime rdf:type owl:Class ;
-                  rdfs:subClassOf emmo:EMMO_80fe82d4_f4c1_43a1_98dc_ee5fc7927e19 .
+                  rdfs:subClassOf emmo:EMMO_80fe82d4_f4c1_43a1_98dc_ee5fc7927e19 ;
+                  skos:prefLabel "PHMeasuredAtTime"@en ;
+                  emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "PH measured at a given point in time."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#Tarnishing
 :Tarnishing rdf:type owl:Class ;
             rdfs:subClassOf emmo:EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7 ;
-            rdfs:comment """Tarnishing in the scribe T (1:<25% , 2:25% ≤ x ≤75% , 3: > 75%)
+            rdfs:comment "ChemicalReaction" ;
+            skos:prefLabel "Tarnishing"@en ;
+            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Tarnishing is the chemical process of creating a thin corrosion layer (tarnish) on a metal surface."@en ;
+            emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Tarnishing in the scribe T (1:<25% , 2:25% ≤ x ≤75% , 3: > 75%)
 
-http://onto-ns.com/meta/0.1/DropTest/T should map to this concept"""@en ,
-                         "ChemicalReaction" .
+http://onto-ns.com/meta/0.1/DropTest/T should map to this concept"""@en .
+
+
+###  https://vipcoat-oip.com/vipcoat-application-ontology#XCoordinateOfAnalysis
+:XCoordinateOfAnalysis rdf:type owl:Class ;
+                       rdfs:subClassOf emmo:EMMO_6ee9304e_54b7_4594_8354_0790138dffb8 ;
+                       skos:prefLabel "XCoordinateOfAnalysis"@en ;
+                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measured distrance from a reference point to the point of analysis along the x-direction of a local coordinate system."@en .
+
+
+###  https://vipcoat-oip.com/vipcoat-application-ontology#YCoordinateOfAnalysis
+:YCoordinateOfAnalysis rdf:type owl:Class ;
+                       rdfs:subClassOf emmo:EMMO_6ee9304e_54b7_4594_8354_0790138dffb8 ;
+                       skos:prefLabel "YCoordinateOfAnalysis"@en ;
+                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measured distrance from a reference point to the point of analysis along the y-direction of a local coordinate system."@en .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
