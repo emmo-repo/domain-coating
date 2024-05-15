@@ -4,7 +4,7 @@
 	<uri name="https://w3id.org/emmo/domain/electrochemistry/0.11.0-beta/electrochemistry" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/v0.11.0-beta/electrochemistry.ttl"/>
         <uri name="https://w3id.org/emmo/domain/electrochemistry/0.11.0-beta/electrochemicalquantities" uri="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/v0.11.0-beta/electrochemicalquantities.ttl"/>
 	<uri name="https://w3id.org/emmo/1.0.0-beta7" uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta7/emmo.ttl"/>
-	<uri name="https://vipcoat-oip.com/coating-ontology" uri="./coating.ttl"/>
+	<uri name="https://w3id.org/emmo/domain/coating" uri="./coating.ttl"/>
         <uri name="https://w3id.org/emmo/domain/chemicalsubstance/0.4.0-beta/chemicalsubstance" uri="https://raw.githubusercontent.com/emmo-repo/domain-chemicalsubstance/main/chemicalsubstance.ttl"/>
         <uri name="https://w3id.org/emmo/domain/chameo/1.0.0-beta3/chameo" uri="https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl"/>
 

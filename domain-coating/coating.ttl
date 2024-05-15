@@ -1,4 +1,4 @@
-@prefix : <https://vipcoat-oip.com/coating-ontology#> .
+@prefix : <https://w3id.org/emmo/domain/coating#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -8,9 +8,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix electrochemistry: <https://w3id.org/emmo/domain/electrochemistry#> .
-@base <https://vipcoat-oip.com/coating-ontology#> .
+@base <https://w3id.org/emmo/domain/coating#> .
 
-<https://vipcoat-oip.com/coating-ontology> rdf:type owl:Ontology ;
+<https://w3id.org/emmo/domain/coating> rdf:type owl:Ontology ;
                                             owl:imports <https://w3id.org/emmo/1.0.0-beta7/emmo> ,
                                                         <https://w3id.org/emmo/domain/electrochemistry/0.11.0-beta/electrochemistry> ;
                                             dcterms:contributor " AirBus"@en ,
