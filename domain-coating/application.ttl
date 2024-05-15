@@ -25,8 +25,9 @@
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#BackwardSpeed
 :BackwardSpeed rdf:type owl:Class ;
-               rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6> ;
-               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Elucidation needed by application experts for correct placement. We have here assumed that this is speed of reaction."@en .
+    rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6> ;
+    skos:prefLabel "BackwardSpeed"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Elucidation needed by application experts for correct placement. We have here assumed that this is speed of reaction."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#BlackSpotFormation
@@ -40,20 +41,23 @@ http://onto-ns.com/meta/0.1/DropTest/D should ma p to this concept."""@en .
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#ConcentrationInElectrolyte
 :ConcentrationInElectrolyte rdf:type owl:Class ;
-                            rdfs:subClassOf emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
-                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Concentration of a given ion or molecule in the electrolyte"@en .
+    rdfs:subClassOf emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
+    skos:prefLabel "ConcentrationInElectrolyte"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Concentration of a given ion or molecule in the electrolyte"@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#ConcentrationInPrimer
 :ConcentrationInPrimer rdf:type owl:Class ;
-                       rdfs:subClassOf emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
-                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Concentration of a given ion or molecule in the primer"@en .
+    rdfs:subClassOf emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
+    skos:prefLabel "ConcentrationInPrimer"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Concentration of a given ion or molecule in the primer"@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#ConcentrationInTopcoat
 :ConcentrationInTopcoat rdf:type owl:Class ;
-                        rdfs:subClassOf emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
-                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Concentration of a given ion or molecule in the topcoat"@en .
+    rdfs:subClassOf emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
+    skos:prefLabel "ConcentrationInTopcoat"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Concentration of a given ion or molecule in the topcoat"@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#CorrosionProduct
@@ -80,32 +84,36 @@ http://onto-ns.com/meta/0.1/DropTest/C should map to this concept"""@en .
                                                        ] ;
                                         owl:allValuesFrom <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59>
                                       ] ;
-                      skos:prefLabel "Electric potential over an electrolyte."@en ,
-                                     "ElectrolytePotential"@en .
+    skos:prefLabel "ElectrolytePotential"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric potential over an electrolyte."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#EquivalentRadius
 :EquivalentRadius rdf:type owl:Class ;
-                  rdfs:subClassOf emmo:EMMO_32dcd601_47c7_4028_b7fa_5e972ae57f12 ;
-                  emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An equivalent radius, when we assume that all inhibitors are spheres."@en .
+    rdfs:subClassOf emmo:EMMO_32dcd601_47c7_4028_b7fa_5e972ae57f12 ;
+    skos:prefLabel "EquivalentRadius"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An equivalent radius, when we assume that all inhibitors are spheres."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#ForwardSpeed
 :ForwardSpeed rdf:type owl:Class ;
-              rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6> ;
-              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Elucidation needed by application experts for correct placement. We have here assumed that this is speed of reaction."@en .
+    rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6> ;
+    skos:prefLabel "ForwardSpeed"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Elucidation needed by application experts for correct placement. We have here assumed that this is speed of reaction."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#InhibitorSpecificSurfaceArea
 :InhibitorSpecificSurfaceArea rdf:type owl:Class ;
-                              rdfs:subClassOf :SpecificSurfaceAreaPerVolume ;
-                              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The amount of inhibitor surface per volume of inhibitor."@en .
+    rdfs:subClassOf :SpecificSurfaceAreaPerVolume ;
+    skos:prefLabel "InhibitorSpecificSurfaceArea"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The amount of inhibitor surface per volume of inhibitor."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#InhibitorVolumeFraction
 :InhibitorVolumeFraction rdf:type owl:Class ;
-                         rdfs:subClassOf emmo:EMMO_a8eb87b5_4d10_4137_a75c_e04ee59ca095 ;
-                         emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The volume fraction of the inhibitor."@en .
+    rdfs:subClassOf emmo:EMMO_a8eb87b5_4d10_4137_a75c_e04ee59ca095 ;
+    skos:prefLabel "InhibitorVolumeFraction"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The volume fraction of the inhibitor."@en .
 
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#NaPlus
@@ -118,6 +126,7 @@ http://onto-ns.com/meta/0.1/DropTest/C should map to this concept"""@en .
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#NaPlusInElectrolyteConcentration
 :NaPlusInElectrolyteConcentration rdf:type owl:Class ;
+        skos:prefLabel "NaPlusInElectrolyteConcentration"@en ;
                                   rdfs:subClassOf emmo:EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2 ,
                                                   [ rdf:type owl:Restriction ;
                                                     owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
@@ -145,6 +154,7 @@ http://onto-ns.com/meta/0.1/DropTest/C should map to this concept"""@en .
 
 ###  https://vipcoat-oip.com/vipcoat-application-ontology#SpecificSurfaceAreaPerVolume
 :SpecificSurfaceAreaPerVolume rdf:type owl:Class ;
+                  skos:prefLabel "SpecificSurfaceAreaPerVolume"@en ;
                               rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112> ,
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
