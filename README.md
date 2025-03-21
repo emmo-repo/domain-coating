@@ -3,7 +3,7 @@ Coating Domain Ontology
 
 This repository contains the coating domain and application ontologies developed in the VIPCOAT project.
 
-The Coating Domain Ontology is released under the Creative Commons International 4.0 (C-BY-4.0) license.
+The Coating Domain Ontology is released under the Creative Commons International 4.0 (CC-BY-4.0) license.
 
 
 Acknowledgement
