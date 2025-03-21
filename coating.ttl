@@ -11,20 +11,16 @@
 @base <https://w3id.org/emmo/domain/coating#> .
 
 <https://w3id.org/emmo/domain/coating> rdf:type owl:Ontology ;
-                                            owl:imports <https://w3id.org/emmo/1.0.0-beta7/emmo> ,
-                                                        <https://w3id.org/emmo/domain/electrochemistry/0.11.0-beta/electrochemistry> ;
-                                            dcterms:contributor " AirBus"@en ,
-                                                                " Elsyca"@en ,
-                                                                " NTNU"@en ,
-                                                                "SINTEF"@en ;
-                                            dcterms:creator " Francesca L. Bleken"@en ,
-                                                            " Heinz Preisig"@en ,
-                                                            " Jesper Friis"@en ,
-                                                            " Peter Meuris"@en ,
-                                                            " Peter Visser"@en ,
-                                                            "Zoi Kefallinou"@en ;
-                                            dcterms:title "Coating ontology"@en ;
-                                            owl:versionInfo "v0.0.1"@en .
+                                            owl:imports <https://w3id.org/emmo/1.0.1/emmo> ,
+                                                        <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/electrochemistry> ;
+                                            dcterms:contributor "Heinz Preisig, NTNU"@en ,
+                                                                "Peter Meuris, Elsyca"@en ,
+                                                                "Peter Visser, AkzoNobel"@en ,
+                                                                "Zoi Kefallinou, Airbus"@en ;
+                                            dcterms:creator "Francesca L. Bleken, SINTEF"@en ,
+                                                            "Jesper Friis, SINTEF"@en ;
+                                            dcterms:title "Coating Domain Ontology"@en ;
+                                            owl:versionInfo "v1.0.0"@en .
 
 #################################################################
 #    Classes
@@ -164,7 +160,7 @@
                                            rdfs:subClassOf :EMMO_1803c6ee-25a3-58ea-ab8a-c85a706a71c1 ;
                                            rdfs:comment "resulting in a very thin coating layer"@en ;
                                            skos:prefLabel "SolGelCoating"@en ;
-                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A type of SurfaceTreatmentProcess. The process includes settling of nm sized particles from a colloidal suspension onto a pre-existing surface, resulting in ceramic materials. 
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A type of SurfaceTreatmentProcess. The process includes settling of nm sized particles from a colloidal suspension onto a pre-existing surface, resulting in ceramic materials.
 """@en .
 
 
