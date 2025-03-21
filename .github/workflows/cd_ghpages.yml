@@ -6,6 +6,9 @@ on:
 permissions:
   contents: write
 
+env:
+  ONTOLOGY: coating
+
 
 jobs:
   deploy-on-ghpages:
@@ -29,8 +32,8 @@ jobs:
     - name: Create squashed and inferred ontology
       run: |
         mkdir build
-        ontoconvert -saw --base-iri="https://w3id.org/emmo/domain/microstructure#" --iri="https://w3id.org/emmo/domain/microstructure" microstructure.ttl build/microstructure.ttl
-        #ontoconvert -saw --base-iri="https://w3id.org/emmo/domain/microstructure#" --iri="https://w3id.org/emmo/domain/microstructure" microstructure.ttl build/microstructure-inferred.ttl --infer=HermiT
+        ontoconvert -saw --base-iri="https://w3id.org/emmo/domain/$ONTOLOGY#" --iri="https://w3id.org/emmo/domain/$ONTOLOGY $ONTOLOGY.ttl build/$ONTOLOGY.ttl
+        ontoconvert -saw --base-iri="https://w3id.org/emmo/domain/$ONTOLOGY#" --iri="https://w3id.org/emmo/domain/$ONTOLOGY" $ONTOLOGY.ttl build/$ONTOLOGY-inferred.ttl --infer=HermiT
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
